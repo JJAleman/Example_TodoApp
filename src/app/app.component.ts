@@ -31,7 +31,7 @@ export class AppComponent {
     console.log(index);
    
     let tempTodoDesc = this.todos[index].name;
-    this.todos[index].name = prompt("Please edit your todo", this.todos[index.name]);
+    this.todos[index].name = prompt("Please edit your todo", this.todos[index].name);
     if (this.todos[index].name == null){
       this.todos[index].name = tempTodoDesc;
     }
